@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/mantente_al_d_a_con_los_mercados_globales_de_divisas_gracias_a_nuestra_aplicaci_n_de_cambio_te_proporcionamos_tipos_de_cambio_precisos_y_actualizados_en_tiempo_real_asegur_ndote_de_tener_la_informaci_n_m_s_reciente_para_tus_conversiones_nuestra_herramienta_te_permite_calcular_f_cilmente_el_valor_de_una_moneda_en_otra_facilitando_la_planificaci_n_de_presupuestos_el_seguimiento_de_inversiones_y_la_toma_de_decisiones_financieras_informadas_conf_a_en_la_exactitud_de_nuestros_datos_para_tus_transacciones_internacionales"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/para_solicitar_ayuda_o_reportar_enviar_mail_a_agustinkolque_gmail_com" />
+
+</RelativeLayout>

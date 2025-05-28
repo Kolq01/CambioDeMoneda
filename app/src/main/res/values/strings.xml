@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CambioDeMoneda</string>
+    <string name="modo_oscuro">Tema de la aplicación</string>
+    <string name="quitar_publicidad">Quitar publicidad</string>
+    <string name="notificaciones_y_alertas">Notificaciones y alertas</string>
+    <string name="configuraci_n">Configuración</string>
+    <string name="informaci_n_y_ayuda">Información y ayuda</string>
+    <string name="icon_back">icon_back</string>
+    <string name="icon_dark_mode">icon_dark_mode</string>
+    <string name="icon_notification">icon_notification</string>
+    <string name="icon_no_ads">icon_no_ads</string>
+    <string name="icon_about_us">icon_about_us</string>
+    <string name="inicio">Inicio</string>
+    <string name="compra">Compra</string>
+    <string name="venta">Venta</string>
+    <string name="sistema">Sistema</string>
+    <string name="activado">Activado</string>
+    <string name="desactivado">Desactivado</string>
+    <string name="mantente_al_d_a_con_los_mercados_globales_de_divisas_gracias_a_nuestra_aplicaci_n_de_cambio_te_proporcionamos_tipos_de_cambio_precisos_y_actualizados_en_tiempo_real_asegur_ndote_de_tener_la_informaci_n_m_s_reciente_para_tus_conversiones_nuestra_herramienta_te_permite_calcular_f_cilmente_el_valor_de_una_moneda_en_otra_facilitando_la_planificaci_n_de_presupuestos_el_seguimiento_de_inversiones_y_la_toma_de_decisiones_financieras_informadas_conf_a_en_la_exactitud_de_nuestros_datos_para_tus_transacciones_internacionales">Mantente al día con los mercados globales de divisas gracias a nuestra aplicación de cambio. Te proporcionamos tipos de cambio precisos y actualizados en tiempo real, asegurándote de tener la información más reciente para tus conversiones. Nuestra herramienta te permite calcular fácilmente el valor de una moneda en otra, facilitando la planificación de presupuestos, el seguimiento de inversiones y la toma de decisiones financieras informadas. Confía en la exactitud de nuestros datos para tus transacciones internacionales.</string>
+    <string name="para_solicitar_ayuda_o_reportar_enviar_mail_a_agustinkolque_gmail_com">Para solicitar ayuda o reportar enviar mail a agustinkolque@gmail.com</string>
+    <string name="cantidad_a_convertir">Cantidad a convertir</string>
+    <string name="conversor_de_divisas">Conversor de Divisas</string>
+    <string name="convertir">Convertir</string>
+</resources>
