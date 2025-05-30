@@ -45,6 +45,8 @@ class MainActivity : AppCompatActivity() {
             requestLocationPermissions()
         }
 
+        applySavedTheme()
+
         val homeFragment = HomeFragment()
         val settingsFragment = SettingsFragment()
 
