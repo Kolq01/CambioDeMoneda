@@ -33,15 +33,15 @@
 
     <LinearLayout
         android:id="@+id/theme"
-        android:background="@drawable/round_back_white_10_20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_white_10_20"
+        android:clickable="true"
         android:orientation="horizontal"
-        android:padding="15dp"
-        android:clickable="true">
+        android:padding="15dp">
 
         <ImageView
             android:id="@+id/nightModeIcon"

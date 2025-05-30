@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_fragment_theme"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="8dp"
     app:cardCornerRadius="16dp">
 
-<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <com.google.android.material.checkbox.MaterialCheckBox
+    <RadioButton
             android:id="@+id/darkMode"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:checked="false"
             android:fontFamily="@font/poppinsregular"
             android:text="@string/activado"/>
-    <com.google.android.material.checkbox.MaterialCheckBox
+    <RadioButton
             android:id="@+id/lightMode"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -28,12 +23,11 @@
             android:fontFamily="@font/poppinsregular"
             android:text="@string/desactivado"/>
 
-    <com.google.android.material.checkbox.MaterialCheckBox
+    <RadioButton
             android:id="@+id/systemMode"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:checked="false"
             android:fontFamily="@font/poppinsregular"
             android:text="@string/sistema"/>
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+</RadioGroup>

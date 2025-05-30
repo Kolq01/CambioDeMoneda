@@ -20,8 +20,6 @@ class SettingsFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
-
-
         return binding.root
 
     }
@@ -36,7 +34,7 @@ class SettingsFragment : Fragment() {
 
         binding.notifications.setOnClickListener{
             val showPopUp = NotificationFragment()
-            showPopUp.show(childFragmentManager, "ThemeAppDialog")
+            showPopUp.show(childFragmentManager, "NotificationDialog")
         }
         /*
         binding.noads.setOnClickListener{
@@ -47,7 +45,7 @@ class SettingsFragment : Fragment() {
 
         binding.help.setOnClickListener{
             val showPopUp = Information()
-            showPopUp.show(childFragmentManager, "ThemeAppDialog")
+            showPopUp.show(childFragmentManager, "InformationDialog")
         }
 
     }
