@@ -1,7 +1,14 @@
-package com.example.cambiodemoneda
+package com.example.cambiodemoneda.ui
 
+import android.annotation.SuppressLint
+import android.app.AlarmManager
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.icu.util.Calendar
 import android.os.Build
 import android.os.Bundle
 import android.preference.PreferenceManager
@@ -16,15 +23,20 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.ui.AppBarConfiguration
+import com.example.cambiodemoneda.AlarmNotification
+import com.example.cambiodemoneda.R
 import com.example.cambiodemoneda.databinding.ActivityMainBinding
-import com.example.cambiodemoneda.fragments.HomeFragment
-import com.example.cambiodemoneda.fragments.SettingsFragment
+import com.example.cambiodemoneda.ui.fragments.HomeFragment
+import com.example.cambiodemoneda.ui.fragments.SettingsFragment
+import com.example.cambiodemoneda.ui.fragments.dialogfragment.NotificationFragment
 import java.util.concurrent.atomic.AtomicBoolean
 
 class MainActivity : AppCompatActivity() {
 
     companion object {
         const val LOCATION_PERMISSIONS_REQUEST_CODE = 100
+        const val MY_CHANNEL_ID = "myChannel" // Las constantes van siempre en mayuscula
+        const val NOTIFICATION_ID = 1
     }
 
     //private lateinit var consentInformation: ConsentInformation
@@ -183,5 +195,27 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)
             startActivity(intent)
         }
+    }
+
+
+    fun createChannel(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            val channel = NotificationChannel(NotificationFragment.MY_CHANNEL_ID, "Cambio de moneda", NotificationManager.IMPORTANCE_DEFAULT).apply {
+                description = "PRUEBA"
+            }
+
+            val notificationManager: NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+            notificationManager.createNotificationChannel(channel)
+        }
+    }
+
+    @SuppressLint("ScheduleExactAlarm")
+    private fun scheduleNotification(){
+        val intent = Intent(applicationContext, AlarmNotification::class.java)
+        val pendingIntent = PendingIntent.getBroadcast(applicationContext, NOTIFICATION_ID, intent, PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT)
+
+        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, Calendar.getInstance().timeInMillis + 10000, pendingIntent)
     }
 }

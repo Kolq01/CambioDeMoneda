@@ -1,9 +1,9 @@
-package com.example.cambiodemoneda.data.services
+package com.example.cambiodemoneda.data.model.services
 
-import com.example.cambiodemoneda.data.response.BrazilianReal
-import com.example.cambiodemoneda.data.response.Euro
-import com.example.cambiodemoneda.data.response.PesoChileno
-import com.example.cambiodemoneda.data.response.PesoUruguayo
+import com.example.cambiodemoneda.data.model.BrazilianReal
+import com.example.cambiodemoneda.data.model.Euro
+import com.example.cambiodemoneda.data.model.PesoChileno
+import com.example.cambiodemoneda.data.model.PesoUruguayo
 import retrofit2.Response
 import retrofit2.http.GET
 

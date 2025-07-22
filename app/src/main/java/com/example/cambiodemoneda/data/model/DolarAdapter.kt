@@ -1,4 +1,4 @@
-package com.example.cambiodemoneda.data
+package com.example.cambiodemoneda.data.model
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

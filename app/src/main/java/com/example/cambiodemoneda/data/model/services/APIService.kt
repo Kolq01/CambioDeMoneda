@@ -1,13 +1,13 @@
-package com.example.cambiodemoneda.data.services
+package com.example.cambiodemoneda.data.model.services
 
-import com.example.cambiodemoneda.data.response.Blue
-import com.example.cambiodemoneda.data.response.CCL
-import com.example.cambiodemoneda.data.response.Cripto
-import com.example.cambiodemoneda.data.response.DolarResponse
-import com.example.cambiodemoneda.data.response.MEP
-import com.example.cambiodemoneda.data.response.Mayorista
-import com.example.cambiodemoneda.data.response.Oficial
-import com.example.cambiodemoneda.data.response.Tarjeta
+import com.example.cambiodemoneda.data.model.Blue
+import com.example.cambiodemoneda.data.model.CCL
+import com.example.cambiodemoneda.data.model.Cripto
+import com.example.cambiodemoneda.data.model.DolarResponse
+import com.example.cambiodemoneda.data.model.MEP
+import com.example.cambiodemoneda.data.model.Mayorista
+import com.example.cambiodemoneda.data.model.Oficial
+import com.example.cambiodemoneda.data.model.Tarjeta
 import retrofit2.Response
 import retrofit2.http.GET
 
