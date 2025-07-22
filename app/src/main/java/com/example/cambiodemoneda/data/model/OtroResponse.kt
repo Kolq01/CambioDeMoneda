@@ -1,4 +1,4 @@
-package com.example.cambiodemoneda.data.response
+package com.example.cambiodemoneda.data.model
 
 data class BrazilianReal(
     val compra: Int,

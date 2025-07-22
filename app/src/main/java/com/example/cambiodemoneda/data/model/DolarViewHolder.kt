@@ -1,14 +1,7 @@
-package com.example.cambiodemoneda.data
+package com.example.cambiodemoneda.data.model
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.example.cambiodemoneda.data.response.Blue
-import com.example.cambiodemoneda.data.response.CCL
-import com.example.cambiodemoneda.data.response.Cripto
-import com.example.cambiodemoneda.data.response.MEP
-import com.example.cambiodemoneda.data.response.Mayorista
-import com.example.cambiodemoneda.data.response.Oficial
-import com.example.cambiodemoneda.data.response.Tarjeta
 import com.example.cambiodemoneda.databinding.MoneyItemBinding
 
 

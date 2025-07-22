@@ -1,4 +1,4 @@
-package com.example.cambiodemoneda.fragments
+package com.example.cambiodemoneda.ui.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cambiodemoneda.R
-import com.example.cambiodemoneda.data.services.APIService
-import com.example.cambiodemoneda.data.DolarAdapter
+import com.example.cambiodemoneda.data.model.services.APIService
+import com.example.cambiodemoneda.data.model.DolarAdapter
 import com.example.cambiodemoneda.databinding.FragmentHomeBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -22,7 +22,7 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private lateinit var adapter:DolarAdapter
+    private lateinit var adapter: DolarAdapter
     private val dolar1 = mutableListOf<Any>()
 
 
@@ -44,7 +44,6 @@ class HomeFragment : Fragment() {
     }
 
     private fun configSwipe() {
-
         binding.swipe.setColorSchemeResources(R.color.md_theme_outline)
         binding.swipe.setOnRefreshListener {
             Log.i("funca","funciona")
